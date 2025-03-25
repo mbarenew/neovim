@@ -151,7 +151,106 @@ check this guy's cheatsheet for more:
 `"ay + command` will give u possibility to yank whatever u gave to register a
 
 
-### Other old plugins to consider:
+### Other commands and plugins to consider:
+
+# Comandi Vim Utilizzati
+
+### **autopairs**
+- **<leader>wr**: Ripristina l'ultima sessione di lavoro per la directory corrente.
+- **<leader>ws**: Salva la sessione di lavoro per la directory corrente.
+
+### **comment**
+- **gcc**: Toglie o aggiunge il commento sulla linea corrente (linewise).
+- **gbc**: Toglie o aggiunge il commento sulla linea corrente (blockwise).
+- **[count]gcc**: Toglie o aggiunge il commento sulle linee selezionate (linewise).
+- **[count]gbc**: Toglie o aggiunge il commento sulle linee selezionate (blockwise).
+- **gc[count]{motion}**: Toglie o aggiunge il commento su una regione (linewise).
+- **gb[count]{motion}**: Toglie o aggiunge il commento su una regione (blockwise).
+
+### **gitsigns**
+- **]h**: Passa al "hunk" successivo.
+- **[h**: Passa al "hunk" precedente.
+- **<leader>hs**: Mette in staging il "hunk" corrente.
+- **<leader>hr**: Resetta il "hunk" corrente.
+- **<leader>hS**: Mette in staging l'intero buffer.
+- **<leader>hR**: Resetta l'intero buffer.
+- **<leader>hu**: Annulla il "stage" del "hunk".
+- **<leader>hp**: Previsualizza il "hunk".
+- **<leader>hb**: Visualizza il "blame" della linea.
+- **<leader>hB**: Attiva/disattiva il "blame" sulla linea corrente.
+- **<leader>hd**: Mostra le differenze per il "hunk" corrente.
+- **<leader>hD**: Mostra le differenze tra il "hunk" corrente e il commit precedente.
+
+### **lazygit**
+- **<leader>lg**: Apre LazyGit.
+
+### **cmp**
+- **<C-k>**: Seleziona l'elemento precedente.
+- **<C-j>**: Seleziona l'elemento successivo.
+- **<C-b>**: Scorre verso l'alto la documentazione.
+- **<C-f>**: Scorre verso il basso la documentazione.
+- **<C-Space>**: Mostra i suggerimenti di completamento.
+- **<C-e>**: Chiude la finestra di completamento.
+- **<CR>**: Conferma il suggerimento selezionato.
+
+### **tree**
+- **<leader>ee**: Attiva/disattiva l'esploratore di file.
+- **<leader>ef**: Attiva/disattiva l'esploratore di file sul file corrente.
+- **<leader>ec**: Collassa l'esploratore di file.
+- **<leader>er**: Rinfresca l'esploratore di file.
+
+### **project.nvim**
+- **:Telescope projects**: Mostra tutti i progetti rilevati.
+- **:cd /path/to/project**: Cambia manualmente la directory.
+- **:pwd**: Mostra la directory corrente.
+- **:Telescope find_files**: Cerca file nel progetto attuale.
+- **:Telescope live_grep**: Cerca testo nel progetto attuale.
+
+### **substitute**
+- **s**: Sostituisce con un movimento.
+- **ss**: Sostituisce l'intera linea.
+- **S**: Sostituisce fino alla fine della linea.
+- **[Visual] s**: Sostituisce nella modalità visiva.
+
+### **surround**
+- **Surround**: Aggiunge delimitatori (come parentesi o virgolette) intorno al testo selezionato.
+
+### **telescope**
+- **<leader>ff**: Cerca i file nel progetto attuale.
+- **<leader>fr**: Cerca i file recenti.
+- **<leader>fs**: Cerca una stringa nel progetto attuale.
+- **<leader>fc**: Cerca una stringa sotto il cursore nel progetto attuale.
+- **<leader>ft**: Cerca i TODO nel progetto.
+
+### **todo-comments**
+- **]t**: Passa al prossimo commento TODO.
+- **[t**: Passa al commento TODO precedente.
+
+### **trouble**
+- **<leader>xw**: Apre la finestra di diagnostica del workspace.
+- **<leader>xd**: Apre la finestra di diagnostica del documento.
+- **<leader>xq**: Apre la lista quickfix di diagnostica.
+- **<leader>xl**: Apre la lista di diagnostica di posizione.
+- **<leader>xt**: Apre la lista di TODO in Trouble.
+
+### **vim maximize**
+- **<leader>sm**: Massimizza/minimizza una finestra.
+
+### **keymaps**
+- **jk**: Esce dalla modalità di inserimento.
+- **<leader>nh**: Pulisce i contrassegni di ricerca.
+- **<leader>+**: Incrementa il numero sotto il cursore.
+- **<leader>-**: Decrementa il numero sotto il cursore.
+- **<leader>sv**: Divide la finestra verticalmente.
+- **<leader>sh**: Divide la finestra orizzontalmente.
+- **<leader>se**: Rende tutte le finestre della stessa dimensione.
+- **<leader>sx**: Chiude la finestra corrente.
+- **<leader>to**: Apre una nuova tab.
+- **<leader>tx**: Chiude la tab corrente.
+- **<leader>tn**: Passa alla tab successiva.
+- **<leader>tp**: Passa alla tab precedente.
+- **<leader>tf**: Sposta il buffer corrente in una nuova tab.
+
 
 ```lua
 -- My plugins here
