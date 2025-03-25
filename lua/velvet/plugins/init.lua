@@ -5,4 +5,5 @@ return {
 	"ellisonleao/gruvbox.nvim",
 	"rcarriga/nvim-notify",
 	"github/copilot.vim",
+	"f-person/git-blame.nvim",
 }
