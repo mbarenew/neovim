@@ -4,4 +4,5 @@ return {
 	"ahmedkhalf/project.nvim",
 	"ellisonleao/gruvbox.nvim",
 	"rcarriga/nvim-notify",
+	"github/copilot.vim",
 }
