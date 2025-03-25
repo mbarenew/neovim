@@ -150,14 +150,16 @@ check this guy's cheatsheet for more:
 
 `"ay + command` will give u possibility to yank whatever u gave to register a
 
+
 ### Other old plugins to consider:
 
+```lua
 -- My plugins here
-use "wbthomason/packer.nvim" -- Have packer manage itself
-use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
-use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
-use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
-use "numToStr/Comment.nvim" -- Easily comment stuff
+use "wbthomason/packer.nvim"               -- Have packer manage itself
+use "nvim-lua/popup.nvim"                  -- An implementation of the Popup API from vim in Neovim
+use "nvim-lua/plenary.nvim"                -- Useful lua functions used by lots of plugins
+use "windwp/nvim-autopairs"                -- Autopairs, integrates with both cmp and treesitter
+use "numToStr/Comment.nvim"                -- Easily comment stuff
 use "kyazdani42/nvim-web-devicons"
 use "kyazdani42/nvim-tree.lua"
 use "akinsho/bufferline.nvim"
@@ -168,12 +170,12 @@ use "ahmedkhalf/project.nvim"
 use "lewis6991/impatient.nvim"
 use "lukas-reineke/indent-blankline.nvim"
 use "goolord/alpha-nvim"
-use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
+use "antoinemadec/FixCursorHold.nvim"     -- This is needed to fix LSP doc highlight
 use "folke/which-key.nvim"
 use "github/copilot.vim"
 use({
-"iamcco/markdown-preview.nvim",
-run = function() vim.fn["mkdp#util#install"]() end,
+  "iamcco/markdown-preview.nvim",
+  run = function() vim.fn["mkdp#util#install"]() end,
 })
 
 -- Colorschemes
@@ -182,25 +184,25 @@ use "lunarvim/darkplus.nvim"
 use "ellisonleao/gruvbox.nvim"
 
 -- cmp plugins
-use "hrsh7th/nvim-cmp" -- The completion plugin
-use "hrsh7th/cmp-buffer" -- buffer completions
-use "hrsh7th/cmp-path" -- path completions
-use "hrsh7th/cmp-cmdline" -- cmdline completions
-use "saadparwaiz1/cmp_luasnip" -- snippet completions
+use "hrsh7th/nvim-cmp"                   -- The completion plugin
+use "hrsh7th/cmp-buffer"                 -- Buffer completions
+use "hrsh7th/cmp-path"                   -- Path completions
+use "hrsh7th/cmp-cmdline"                -- Cmdline completions
+use "saadparwaiz1/cmp_luasnip"           -- Snippet completions
 use "hrsh7th/cmp-nvim-lsp"
 
--- snippets
-use "L3MON4D3/LuaSnip" --snippet engine
-use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+-- Snippets
+use "L3MON4D3/LuaSnip"                   -- Snippet engine
+use "rafamadriz/friendly-snippets"       -- A bunch of snippets to use
 
 -- LSP
-use "neovim/nvim-lspconfig" -- enable LSP
-use "williamboman/nvim-lsp-installer" -- simple to use language server installer
-use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
-use { "jose-elias-alvarez/null-ls.nvim", requires = 'nvim-lua/plenary.nvim' } -- for formatters and linters
-use "ray-x/lsp_signature.nvim" -- LSP signature
-use "folke/trouble.nvim" -- LSP troubleshooting
-use 'mfussenegger/nvim-lint' -- Linting
+use "neovim/nvim-lspconfig"              -- Enable LSP
+use "williamboman/nvim-lsp-installer"    -- Simple to use language server installer
+use "tamago324/nlsp-settings.nvim"       -- Language server settings defined in JSON
+use { "jose-elias-alvarez/null-ls.nvim", requires = 'nvim-lua/plenary.nvim' } -- Formatters and linters
+use "ray-x/lsp_signature.nvim"           -- LSP signature
+use "folke/trouble.nvim"                 -- LSP troubleshooting
+use 'mfussenegger/nvim-lint'            -- Linting
 use "MunifTanjim/prettier.nvim"
 
 -- Notify
@@ -211,8 +213,8 @@ use "nvim-telescope/telescope.nvim"
 
 -- Treesitter
 use {
-"nvim-treesitter/nvim-treesitter",
-run = ":TSUpdate",
+  "nvim-treesitter/nvim-treesitter",
+  run = ":TSUpdate",
 }
 use "JoosepAlviste/nvim-ts-context-commentstring"
 
