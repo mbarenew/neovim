@@ -150,16 +150,17 @@ check this guy's cheatsheet for more:
 
 `"ay + command` will give u possibility to yank whatever u gave to register a
 
-
 ### Other commands and plugins to consider:
 
 # Comandi Vim Utilizzati
 
 ### **autopairs**
+
 - **<leader>wr**: Ripristina l'ultima sessione di lavoro per la directory corrente.
 - **<leader>ws**: Salva la sessione di lavoro per la directory corrente.
 
 ### **comment**
+
 - **gcc**: Toglie o aggiunge il commento sulla linea corrente (linewise).
 - **gbc**: Toglie o aggiunge il commento sulla linea corrente (blockwise).
 - **[count]gcc**: Toglie o aggiunge il commento sulle linee selezionate (linewise).
@@ -168,6 +169,7 @@ check this guy's cheatsheet for more:
 - **gb[count]{motion}**: Toglie o aggiunge il commento su una regione (blockwise).
 
 ### **gitsigns**
+
 - **]h**: Passa al "hunk" successivo.
 - **[h**: Passa al "hunk" precedente.
 - **<leader>hs**: Mette in staging il "hunk" corrente.
@@ -182,9 +184,11 @@ check this guy's cheatsheet for more:
 - **<leader>hD**: Mostra le differenze tra il "hunk" corrente e il commit precedente.
 
 ### **lazygit**
+
 - **<leader>lg**: Apre LazyGit.
 
 ### **cmp**
+
 - **<C-k>**: Seleziona l'elemento precedente.
 - **<C-j>**: Seleziona l'elemento successivo.
 - **<C-b>**: Scorre verso l'alto la documentazione.
@@ -194,12 +198,14 @@ check this guy's cheatsheet for more:
 - **<CR>**: Conferma il suggerimento selezionato.
 
 ### **tree**
+
 - **<leader>ee**: Attiva/disattiva l'esploratore di file.
 - **<leader>ef**: Attiva/disattiva l'esploratore di file sul file corrente.
 - **<leader>ec**: Collassa l'esploratore di file.
 - **<leader>er**: Rinfresca l'esploratore di file.
 
 ### **project.nvim**
+
 - **:Telescope projects**: Mostra tutti i progetti rilevati.
 - **:cd /path/to/project**: Cambia manualmente la directory.
 - **:pwd**: Mostra la directory corrente.
@@ -207,15 +213,18 @@ check this guy's cheatsheet for more:
 - **:Telescope live_grep**: Cerca testo nel progetto attuale.
 
 ### **substitute**
+
 - **s**: Sostituisce con un movimento.
 - **ss**: Sostituisce l'intera linea.
 - **S**: Sostituisce fino alla fine della linea.
 - **[Visual] s**: Sostituisce nella modalità visiva.
 
 ### **surround**
+
 - **Surround**: Aggiunge delimitatori (come parentesi o virgolette) intorno al testo selezionato.
 
 ### **telescope**
+
 - **<leader>ff**: Cerca i file nel progetto attuale.
 - **<leader>fr**: Cerca i file recenti.
 - **<leader>fs**: Cerca una stringa nel progetto attuale.
@@ -223,10 +232,12 @@ check this guy's cheatsheet for more:
 - **<leader>ft**: Cerca i TODO nel progetto.
 
 ### **todo-comments**
+
 - **]t**: Passa al prossimo commento TODO.
 - **[t**: Passa al commento TODO precedente.
 
 ### **trouble**
+
 - **<leader>xw**: Apre la finestra di diagnostica del workspace.
 - **<leader>xd**: Apre la finestra di diagnostica del documento.
 - **<leader>xq**: Apre la lista quickfix di diagnostica.
@@ -234,9 +245,11 @@ check this guy's cheatsheet for more:
 - **<leader>xt**: Apre la lista di TODO in Trouble.
 
 ### **vim maximize**
+
 - **<leader>sm**: Massimizza/minimizza una finestra.
 
 ### **keymaps**
+
 - **jk**: Esce dalla modalità di inserimento.
 - **<leader>nh**: Pulisce i contrassegni di ricerca.
 - **<leader>+**: Incrementa il numero sotto il cursore.
@@ -250,7 +263,7 @@ check this guy's cheatsheet for more:
 - **<leader>tn**: Passa alla tab successiva.
 - **<leader>tp**: Passa alla tab precedente.
 - **<leader>tf**: Sposta il buffer corrente in una nuova tab.
-
+- **<leader>gT**: Apre una tab e va al go to definition di quel metodo.
 
 ```lua
 -- My plugins here
@@ -321,3 +334,4 @@ use "JoosepAlviste/nvim-ts-context-commentstring"
 use "lewis6991/gitsigns.nvim"
 use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
 use 'f-person/git-blame.nvim'
+```

@@ -26,3 +26,9 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 keymap.set("n", "<leader>fp", ":Telescope projects<CR>", { noremap = true, silent = true })
 keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", { noremap = true, silent = true })
 keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>", { noremap = true, silent = true })
+
+-- go to definition opened in another tab
+keymap.set("n", "gT", function()
+	vim.cmd("tab split")
+	vim.lsp.buf.definition()
+end, { noremap = true, silent = true })
